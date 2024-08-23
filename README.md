@@ -126,7 +126,7 @@ Final Review & Delivery (1 Week)
 **Author**
 --------
 
-This project was created by Your Name. I am a passionate software developer specializing in web development and machine learning. Feel free to connect with me on GitHub!
+This project was created by Aarav Makhija I am a passionate software developer specializing in web development and machine learning. Feel free to connect with me on GitHub!
 
 **Acknowledgements**
 ----------------
