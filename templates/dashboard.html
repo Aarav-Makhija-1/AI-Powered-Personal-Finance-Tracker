@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="display-4">Your Financial Dashboard</h1>
+        <p class="lead">See your financial status at a glance.</p>
+
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Total Expenses: ₹{{ total_expense }}</h3>
+            </div>
+            <div class="col-md-6">
+                <h3>Predicted Future Expenses: ₹{{ future_expense }}</h3>
+            </div>
+        </div>
+
+        <div class="table-responsive mt-5">
+            {{ tables | safe }}
+        </div>
+    </div>
+
+    <script src="/static/js/main.js"></script>
+</body>
+</html>
