@@ -25,6 +25,25 @@
         <div class="table-responsive mt-5">
             {{ tables | safe }}
         </div>
+
+        <div class="mt-5">
+            <h3>Add New Expense</h3>
+            <form method="POST" action="/dashboard">
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" class="form-control" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <input type="text" class="form-control" id="description" name="description" required>
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount:</label>
+                    <input type="number" step="0.01" class="form-control" id="amount" name="amount" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Add Expense</button>
+            </form>
+        </div>
     </div>
 
     <script src="/static/js/main.js"></script>
